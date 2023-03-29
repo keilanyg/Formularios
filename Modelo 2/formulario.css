@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#login-box {
+  position: relative;
+  margin: 3% auto;
+  width: 1000px;
+  height: 520px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  width: 500px;
+  height: 520px;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 120px 70px;
+  width: 500px;
+  height: 520px;
+  background-position: center;
+  border-radius: 0 5px 5px 0;
+  background-color:rgb(240, 110, 5);
+}
+
+.botao{
+  display: flex;
+  margin: 30px 175px;
+  border: 2px solid rgb(240, 110, 5);
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: none;
+}
+
+@media (min-width: 100px) and (max-width: 770px) {
+  .left{
+    width: 400px;
+    height: 540px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+  }
+  .botao{
+    margin: 40px 115px;
+  }
+  .right{
+   display: none;
+  }
+  #login-box{
+   width: 450px;
+   height: 90px;
+   box-shadow: none;
+  }
+}

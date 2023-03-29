@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="box">
+        <div>
+            <legend>
+                <h1 id="titulo">Formulário</h1>
+            </legend>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="data"><strong>Data de nascimento</strong></label>
+                    <input type="date" name="datanascimento" id="datanascimento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <select id="estado">
+                        <option selected disabled value="">Selecione</option>
+                        <option>CE</option>
+                        <option>RN</option>
+                        <option>PB</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div class="campo">
+                    <label><strong>Sexo</strong></label>
+                    <br><br>
+                    <label>
+                        <input type="radio" name="deveweb" value="Feminino">Feminino
+                    </label>
+                    <label>
+                        <input type="radio" name="deveweb" value="Masculino">Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="deveweb" value="Outro">Outro
+                    </label>
+                </div>
+                <div class="campo">
+                    <br>
+                    <label><strong>Mensagem</strong></label><br>
+                    <textarea row="6" style="width:26em;" id="mensagem" name="mensagem"></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="foto"><strong>Adicione uma foto para o perfil</strong></label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <img src="imagem.jpg">
+
+</body>
+
+</html>
